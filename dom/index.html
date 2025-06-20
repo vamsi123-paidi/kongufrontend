@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="colorBtn1">light</button>
+    <button id="colorBtn2">dark</button> 
+<script>
+  const colorBtn1 = document.getElementById("colorBtn1");
+  const colorBtn2 = document.getElementById("colorBtn2");
+  const body1 = document.querySelector('body')
+
+    colorBtn1.addEventListener("click", () => {
+    body1.style.backgroundColor = "white";
+  });
+    colorBtn2.addEventListener("click", () => {
+    body1.style.backgroundColor = "black";
+  });
+</script> -->
+
+<button class="actionBtn">Button 1</button>
+<button class="actionBtn">Button 2</button>
+<button class="actionBtn">Button 3</button>
+
+<script>
+  const buttons = document.querySelectorAll(".actionBtn");
+
+  buttons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      alert(`Button ${index + 1} clicked!`);
+    });
+  });
+</script>
+
+</body>
+</html>
